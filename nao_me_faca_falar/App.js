@@ -131,7 +131,7 @@ export default function AnoteAqui() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}> Minhas Anotações</Text>
+      <Text style={styles.titulo}>Minhas Anotações</Text>
       <Text style={styles.contador}>Total: {listaAnotacoes.length}</Text>
 
       <TextInput
@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#F3F4F6",
+    backgroundColor: "#111",
     paddingTop: 50,
   },
   titulo: {
@@ -194,23 +194,27 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 6,
     textAlign: "center",
-    color: "#1F2937",
+    color: "#FF00FF", // Neon pink
+    fontFamily: "Courier New", // Retro font
   },
   contador: {
     fontSize: 14,
-    color: "#6B7280",
+    color: "#00FF00", // Neon green
     textAlign: "center",
     marginBottom: 20,
+    fontFamily: "Courier New", // Retro font
   },
   input: {
-    backgroundColor: "#fff",
-    borderColor: "#E5E7EB",
+    backgroundColor: "#222",
+    borderColor: "#FF00FF", // Neon pink
     borderWidth: 1,
     borderRadius: 10,
     padding: 12,
     minHeight: 70,
     marginBottom: 15,
     fontSize: 16,
+    color: "#fff",
+    fontFamily: "Courier New", // Retro font
   },
   botoes: {
     flexDirection: "row",
@@ -223,60 +227,62 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   btnSalvar: {
-    backgroundColor: "#2563EB",
+    backgroundColor: "#FF00FF", // Neon pink
   },
   btnReload: {
-    backgroundColor: "#10B981",
+    backgroundColor: "#00FF00", // Neon green
   },
   btnCancelar: {
-    backgroundColor: "#9CA3AF",
+    backgroundColor: "#888888", // Light grey
   },
   btnEdit: {
-    backgroundColor: "#3B82F6",
+    backgroundColor: "#00FFFF", // Neon blue
   },
   btnDelete: {
-    backgroundColor: "#EF4444",
+    backgroundColor: "#FF4444", // Neon red
   },
   btnText: {
     color: "#fff",
     fontWeight: "600",
     textAlign: "center",
+    fontFamily: "Courier New", // Retro font
   },
   lista: {
     flex: 1,
   },
   card: {
-    backgroundColor: "#fff",
+    backgroundColor: "#333",
     borderRadius: 10,
     padding: 12,
     marginBottom: 12,
     flexDirection: "row",
     alignItems: "center",
-    elevation: 2,  
-    
-    shadowColor: "#000",  
-     shadowOpacity: 0.1,
+    elevation: 5,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 4,
   },
   itemData: {
     fontSize: 12,
-    color: "#9CA3AF",
+    color: "#00FFFF", // Neon blue
     marginBottom: 6,
+    fontFamily: "Courier New", // Retro font
   },
   itemTexto: {
     fontSize: 16,
-    color: "#111827",
+    color: "#FFFFFF",
+    fontFamily: "Courier New", // Retro font
   },
   itemButtons: {
     flexDirection: "column",
     marginLeft: 10,
-    justifyContent: "space-between",
   },
   vazio: {
     textAlign: "center",
     marginTop: 30,
-    color: "#9CA3AF",
+    color: "#00FF00", // Neon green
     fontSize: 16,
+    fontFamily: "Courier New", // Retro font
   },
 });
