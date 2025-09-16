@@ -131,7 +131,7 @@ export default function AnoteAqui() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>📝 Minhas Anotações</Text>
+      <Text style={styles.titulo}> Minhas Anotações</Text>
       <Text style={styles.contador}>Total: {listaAnotacoes.length}</Text>
 
       <TextInput
